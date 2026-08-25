@@ -7,3 +7,15 @@ It contains roll_no and course_id as foreign keys referencing the student and co
 The grade field stores the student's grade using CHAR(2).
 The combination of roll_no, course_id, and semester is defined as a composite primary key, ensuring that the same student cannot be enrolled in the same course more than once during the same semester.
 Overall, this database demonstrates the use of primary keys, foreign keys, composite keys, unique constraints, not-null constraints, and check constraints, while establishing relationships between departments, students, courses, and student enrollments in a structured and consistent manner.
+
+Normalization of College Database
+
+The database is normalized up to Third Normal Form (3NF).
+
+1NF: All fields contain atomic values and no repeating groups.
+2NF: All non-key attributes depend on the complete primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+
+The data is divided into Department, Student, Course, and Enrollment tables to reduce data redundancy and avoid insert, update, and delete anomalies.
+
+Therefore, the database follows a well-structured normalized relational design.
